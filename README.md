@@ -1,4 +1,3 @@
-# License_plate_recognition
 This repository supplies some functions for License Plate Recognition (LPR) project.
 
 ## Directory Hierarchy
