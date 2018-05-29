@@ -18,15 +18,12 @@ def main(color=(0, 51, 255), thickness=3):
 
     # read image addresses
     filenames = []
-    if args.dataset_name == 'cctv':
-        filenames = [os.path.join(args.dataset_name, fname) for fname in os.listdir(args.dataset_name)
-                     if fname.endswith('.png')]
-        filenames = sorted(filenames)
-    elif args.dataset_name == 'parking':
+    if args.dataset_name == 'cctv' or args.dataset_name == 'parking':
         for fold in os.listdir(args.dataset_name):
             for fname in os.listdir(os.path.join(args.dataset_name, fold)):
                 if fname.endswith('.jpg'):
                     filenames.append(os.path.join(args.dataset_name, fold, fname))
+        filenames = sorted(filenames)
     else:
         raise NotImplementedError
 
