@@ -60,7 +60,6 @@ read_xml function helps you read all of the images and the corresponding GT file
 ```
 python read_xml.py --dataset_name=[cctv|parking] --resize_ratio=<float> --delay=<int>
 ```  
-### Arguments
 **dataset_name:** dataset name [cctv|parking], default: parking    
 **resize_ratio:** resize ratio of image when showing it, default: 0.5  
 **delay:** waiting time between two continuous frames, default: 1 (ms)  
@@ -72,5 +71,4 @@ write_csv function reads GT files and writes them in the csv file which is consi
 ```
 python write_csv.py --dataset_name=[cctv|parking]
 ```  
-### Arguments
 **dataset_name:** dataset name [cctv|parking], default: parking     
