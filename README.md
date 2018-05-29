@@ -52,7 +52,7 @@ This repository supplies some functions for License Plate Recognition (LPR) proj
 **cctv:** cctv data file  
 **parking:** parking data file  
 **read_xml.py** read image and GT file  
-**write_csv.py** read GT and write it on csv file
+**write_csv.py** read GT and write it on csv file  
 **Annotation_manual_of_cctv_data.pdf:** Annotation Manual for CCTV data
 
 # read_xml.py
