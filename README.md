@@ -6,17 +6,17 @@ This repository supplies some functions for License Plate Recognition (LPR) proj
 .
 ├── Document
 ├── cctv
-│   ├── 3
+│   ├── 03
 │   │   ├── 000011.jpg
 │   │   ├── 000011.xml
 │   │   ├── ...
 │   │   ├── 000369.jpg
 │   │   ├── 000369.xml
-│   ├── 4
+│   ├── 04
 │   │   └── ...
-│   ├── 5
+│   ├── 05
 │   │   └── ...
-│   ├── 7
+│   ├── 07
 │   │   └── ...
 │   ├── ...
 │   ├── 19
