@@ -4,14 +4,25 @@ This repository supplies some functions for License Plate Recognition (LPR) proj
 ## Directory Hierarchy
 ```
 .
+├── Document
 ├── cctv
-│   ├── 00_00030_0000030.png
-│   ├── 00_00030_0000030.xml
-│   ├── 00_01020_0001020.png
-│   ├── 00_01020_0001020.xml
+│   ├── 03
+│   │   ├── 000011.jpg
+│   │   ├── 000011.xml
+│   │   ├── ...
+│   │   ├── 000369.jpg
+│   │   ├── 000369.xml
+│   ├── 04
+│   │   └── ...
+│   ├── 05
+│   │   └── ...
+│   ├── 07
+│   │   └── ...
 │   ├── ...
-│   ├── 00_08310_0008310.png
-│   └── 00_08310_0008310.xml
+│   ├── 19
+│   │   └── ...
+│   └── 21
+│   │   └── ...
 ├── parking
 │   ├── img_gt_1
 │   │   ├── 000181.jpg
@@ -20,40 +31,23 @@ This repository supplies some functions for License Plate Recognition (LPR) proj
 │   │   ├── 000190.jpg
 │   │   └── 000190.txt
 │   ├── img_gt_2
-│   │   ├── 000021.jpg
-│   │   ├── 000021.txt
-│   │   ├── ...
-│   │   ├── 000030.jpg
-│   │   └── 000030.txt
+│   │   └──...
 │   ├── img_gt_3
-│   │   ├── 000021.jpg
-│   │   ├── 000021.txt
-│   │   ├── ...
-│   │   ├── 000030.jpg
-│   │   └── 000030.txt
+│   │   └──...
 │   ├── img_gt_4
 │   ├── img_gt_5
-│   │   ├── 000011.jpg
-│   │   ├── 000011.txt
-│   │   ├── ...
-│   │   ├── 000020.jpg
-│   │   └── 000020.txt
+│   │   └──...
 │   ├── img_gt_6
-│   │   ├── 000006.jpg
-│   │   ├── 000006.txt
-│   │   ├── ...
-│   │   ├── 000010.jpg
-│   │   └── 000010.txt
-├── Annotation_manual_of_cctv_data.pdf
+│   │   └──...
 ├── read_xml.py
 └── write_csv.py  
 
 ```
+**Document:** documentation files  
 **cctv:** cctv data file  
 **parking:** parking data file  
 **read_xml.py** read image and GT file  
 **write_csv.py** read GT and write it on csv file  
-**Annotation_manual_of_cctv_data.pdf:** Annotation Manual for CCTV data
 
 # read_xml.py
 read_xml function helps you read all of the images and the corresponding GT files in the dataset, and draws bounding box on the image and print license plate number on the console window. You can refer this function to read images and GT files to train your models.
