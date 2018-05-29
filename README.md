@@ -44,6 +44,7 @@ This repository supplies some functions for License Plate Recognition (LPR) proj
 │   │   ├── ...
 │   │   ├── 000010.jpg
 │   │   └── 000010.txt
+├── Annotation_manual_of_cctv_data.pdf
 ├── read_xml.py
 └── write_csv.py  
 
@@ -51,14 +52,14 @@ This repository supplies some functions for License Plate Recognition (LPR) proj
 **cctv:** cctv data file  
 **parking:** parking data file  
 **read_xml.py** read image and GT file  
-**write_csv.py** read GT and write it on csv file
+**write_csv.py** read GT and write it on csv file  
+**Annotation_manual_of_cctv_data.pdf:** Annotation Manual for CCTV data
 
 # read_xml.py
 read_xml function helps you read all of the images and the corresponding GT files in the dataset, and draws bounding box on the image and print license plate number on the console window. You can refer this function to read images and GT files to train your models.
 ```
 python read_xml.py --dataset_name=[cctv|parking] --resize_ratio=<float> --delay=<int>
 ```  
-### Arguments
 **dataset_name:** dataset name [cctv|parking], default: parking    
 **resize_ratio:** resize ratio of image when showing it, default: 0.5  
 **delay:** waiting time between two continuous frames, default: 1 (ms)  
@@ -70,5 +71,4 @@ write_csv function reads GT files and writes them in the csv file which is consi
 ```
 python write_csv.py --dataset_name=[cctv|parking]
 ```  
-### Arguments
 **dataset_name:** dataset name [cctv|parking], default: parking     
