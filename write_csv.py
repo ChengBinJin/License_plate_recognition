@@ -21,7 +21,7 @@ def main():
         raise NotImplementedError
 
     # create csv file
-    csvfile = open(args.dataset_name+'_pred.csv', 'w', newline='')
+    csvfile = open(args.dataset_name+'.csv', 'w', newline='')
     csvwriter = csv.writer(csvfile, delimiter=',')
 
     for idx, filename in enumerate(filenames):
