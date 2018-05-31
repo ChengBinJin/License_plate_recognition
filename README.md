@@ -66,3 +66,12 @@ write_csv function reads GT files and writes them in the csv file which is consi
 python write_csv.py --dataset_name=[cctv|parking]
 ```  
 **dataset_name:** dataset name [cctv|parking], default: parking     
+
+# eval.py
+eval function helps you evaluate the accuracy of your model by comparing GT files with predicted csv. And the function prints evaluated results on the console window and writes on the dataset_analysis.csv file.  
+```
+python eval.py --dataset_name=[cctv|parking] --delay=<int> --avg_pt=<float>
+```
+**dataset_name:** dataset name [cctv|parking], default: parking  
+**delay:** waiting time between two continuous frames, default: 1 (ms)  
+**avg_pt:** average processing time of your model  
