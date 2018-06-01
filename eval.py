@@ -123,7 +123,7 @@ class Evaluation(object):
 
                 # recognition evaluation
                 pre_label = result[1]
-                if ('?' not in pre_label) and (pre_label == gt_label):
+                if ('?' not in gt_label) and (pre_label == gt_label):
                     self.rec_num_corrects += 1
 
     @staticmethod
