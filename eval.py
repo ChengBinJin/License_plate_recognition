@@ -128,6 +128,14 @@ class Evaluation(object):
 
     @staticmethod
     def bb_intersection_over_union(box_a, box_b):
+        iou = 0.
+
+        # check saving type of prediction is correct. We hope saving order is (x1, y1, x2, y2).
+        # some trick way is (x2, y2, x1, y1), then the iou always bigger than threshold.
+        if (box_b[0] >= box_b[2]) or (box_b[1] >= box_b[3]):
+            print('Wrong saving order in csv file!')
+            return iou
+
         # determine the (x, y)-coordinates of the intersection rectangle
         x_a = max(box_a[0], box_b[0])
         y_a = max(box_a[1], box_b[1])
